@@ -26,7 +26,8 @@
                 <?php
                 // Check if image file is a actual image or fake image
                 if (isset($_POST["submit"])) {
-                    $target_dir = "C:\Users\Dave\Desktop\TiffanySchool\SDEV 325\uploads";
+                    // user should input the desired target directory
+                    $target_dir = "   ";
                     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
                     $uploadOk = 1;
                     $imageFileType = pathinfo($target_file, PATHINFO_EXTENSION);
